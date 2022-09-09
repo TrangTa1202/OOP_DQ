@@ -26,6 +26,8 @@ class SinhVien:
             self.sdt = input('Số điện thoại mới: ')
             print('Cập nhật thành công')
 
+# Bài 2
+
 Sv1 = SinhVien('201112345',  'Nguyễn Tiến Thành',  '12/10/2002', '45K14', 3.4)
 Sv2 = SinhVien('201112346',  'Phùng Lê Na', '05/06/2001','45K14', 1.9)
 Sv3 = SinhVien('201112347',  'Trần Văn Hùng', '07/11/2002','45K21.1', 2.3)
@@ -38,7 +40,7 @@ Sv3.inThongTinSV()
 
 
 
-# Bài 2
+
 
 
 
