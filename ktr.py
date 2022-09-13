@@ -18,11 +18,12 @@ class HangHoa:
 
 # Bài 3
 
-HH1 = HangHoa('M01',  'Mì tôm Hảo hảo',  100, 3000, 0, 0)
-HH2 = HangHoa('D01',  'Dầu ăn Tường An (1 lít)', 100 , 3000 , 0, 0)
+HH1 = HangHoa('M01',  'Mì tôm Hảo hảo',  100, 3000, int(), 0)
+HH2 = HangHoa('D01',  'Dầu ăn Tường An (1 lít)', 100 , 3000 , int(), 0)
 
 #  Bài 4
 HH1.NhapThemHang()
 print( 'Số lượng mới {}'.format( HH1.SoLuong))
 print('Giá nhập mới {}'.format(HH1.GiaNhap))
-print('Giá bán mới {}'.format(HH1.GiaBan))
+print('Giá bán {} '.format(HH1.GiaBan))
+ 
