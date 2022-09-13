@@ -1,26 +1,18 @@
-# Bài 1:
-class HangHoa:
-      def __init__(self, MaHang, TenHang, SoLuong, GiaNhap , GiaBan, KhuyenMai): 
-            self.MaHang = MaHang
-            self.TenHang = TenHang
-            self.SoLuong = SoLuong
-            self.GiaNhap = GiaNhap
-            self.GiaBan = GiaBan
-            self.KhuyenMai = KhuyenMai
-      # Bài 2
-      def TinhGiaBan(self):
-            if self.SoLuong >= 100:
-                  self.GiaBan = self.GiaNhap * 1.1
-            elif  50 <= self.SoLuong < 100:
-                  self.GiaBan = self.GiaNhap * 1.15
-            else:
-                  self.GiaBan = self.GiaNhap * 1.2
+class Animal:
+      def __init__(self, name):
+            self.name = name
+      def display(self):
+            print("I'm {}".format(self.name))
+class Dog(Animal):
+      def __init__(self, name, size, age, color):
+            super().__init__(name)
+            self.size = size
+            self.age = age
+            self.color = color
+      def Go(self, place):
+            print("I'm going to  {}".format(place))
 
-
-HH1 = HangHoa('M01',  'Mì tôm Hảo hảo',  100, 3000, int(), 0)
-HH2 = HangHoa('D01',  'Dầu ăn Tường An (1 lít)', 20 , 40000 , int(), 0)
-
-HH1.TinhGiaBan()
-
-print('Giá bán {} '.format(HH1.GiaBan)) 
+obj1 = Dog("bull", "large", 2, "yellow")
+obj1.display()
+obj1.Go("garden")
  
